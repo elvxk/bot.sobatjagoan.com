@@ -39,7 +39,7 @@ export default function Home() {
               href="https://discord.com/oauth2/authorize?client_id=1457397789708390400"
               target="_blank"
             >
-              <FaDiscord /> Add to Server
+              <FaDiscord /> Add to Discord
             </Link>
           </Button>
 
