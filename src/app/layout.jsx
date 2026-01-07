@@ -1,7 +1,6 @@
 import './globals.css'
 import React from 'react'
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +17,9 @@ export default function RootLayout({ children }) {
       dir="ltr"
       suppressHydrationWarning
     >
+      <head>
+        <meta name="apple-mobile-web-app-title" content="BOT" />
+      </head>
       <body
         className={`${inter.className} antialiased`}
       >
