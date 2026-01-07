@@ -1,2 +1,106 @@
-# 🍺 Administrator
+# Administrator
+
+## Autorole 
+
+`/autorole` Menambahkan role otomatis pada member saat pertama kali join server
+
+### `/autorole status`
+> ```
+> Melihat status autorole pada server apakah aktif atau tidak, command ini juga berguna untuk melihat list role yang sudah ditambahkan pada konfigurasi autorole
+> ```
+
+### `/autorole add [opt]`
+> ```
+> Menambah role pada konfigurasi autorole
+> Role yang ditambahkan ini nantinya akan automatis assign ke member yang join server
+> ```
+>
+> [Option] `role`
+
+### `/autorole toggle [opt]`
+> ```
+> Enable atau disable fitur auto role pada server sobat
+> Walaupun sudah dilakukan add role, jika autorole statusnya OFF atau nonaktif, maka tidak akan asign role otomatis pada saat ada member join
+> ```
+> [Option] `status`
+
+### `/autorole remove [opt]`
+> ```
+> Menghapus role dalam konfigurasi autorole
+> ```
+> [Option] `role`
+
+## Welcomer
+
+`/welcomer` Mengirim welcome message pada saat ada member join pada server sobat
+
+### `/welcomer toggle [opt]`
+> ```
+> Enable atau disable mengirim pesan welcome automatis pada server sobat
+> ```
+> [Option] `onoff`
+
+### `/welcomer setting [opt]`
+> ```
+> Setup atau pengaturan untuk setting pesan welcome pada saat ada member join di server sobat
+> ```
+> | Option | Description |
+> |:----- | :------ |
+> | `channel (req)` | Channel dimana tempat bot mengirim pesan welcome
+> | `message` | Pesan atau message yang akan dikirim oleh bot
+> | `imageurl` | URL gambar sebagai background untuk banner gambar yang akan dikirim
+> | `greeting` | Layer 1 text pada gambar
+> | `greeting_message` | Pesan sambutan yang akan tampil pada gambar berada paling bawah gambar
+> | `color` | Warna text dan border, menggunkana color HEX seperti #FFFFFF
+> | `shadow` | Enable atau disable shadow pada text atau avatar image
+> <img src="https://cdn.elvxk.web.id/sjbot/guide1.jpg" className="my-4"/>
+>
+> | Props | Description |
+> |:----- | :------ |
+> | `{user}` | Mention user seperti @username
+> | `{user.username}` | Print username dari user yang join
+> | `{server.name}` | Menampilkan nama server sobat
+> | `{membercount}` | Jumlah meber dalam server sobat saat ini
+
+### `/welcomer preview`
+> ```
+> Menampilkan current welcome message yang sudah disetting
+> ```
+
+## Leave
+
+`/leave` Mengirim message pada saat ada member leave dari server sobat
+
+### `/leave toggle [opt]`
+> ```
+> Enable atau disable mengirim pesan automatis padasaat member keluar dari server sobat
+> ```
+> [Option] `onoff`
+
+### `/leave setting [opt]`
+> ```
+> Setup atau pengaturan untuk setting pesan pada saat ada member keluar dari server sobat
+> ```
+> | Option | Description |
+> |:----- | :------ |
+> | `channel (req)` | Channel dimana tempat bot mengirim pesan 
+> | `message` | Pesan atau message yang akan dikirim oleh bot
+> | `imageurl` | URL gambar sebagai background untuk banner gambar yang akan dikirim
+> | `greeting` | Layer 1 text pada gambar
+> | `greeting_message` | Pesan sambutan yang akan tampil pada gambar berada paling bawah gambar
+> | `color` | Warna text dan border, menggunkana color HEX seperti #FFFFFF
+> | `shadow` | Enable atau disable shadow pada text atau avatar image
+> <img src="https://cdn.elvxk.web.id/sjbot/guide1.jpg" className="my-4"/>
+>
+> | Props | Description |
+> |:----- | :------ |
+> | `{user}` | Mention user seperti @username
+> | `{user.username}` | Print username dari user yang join
+> | `{server.name}` | Menampilkan nama server sobat
+> | `{membercount}` | Jumlah meber dalam server sobat saat ini
+
+### `/leave preview`
+> ```
+> Menampilkan current leave message yang sudah disetting
+> ```
 
