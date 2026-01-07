@@ -1,12 +1,13 @@
 export default {
   index: "🏠 Homepage",
-  docs: "📃 Docs",
   docs: {
+    title: "📃 Docs",
     theme: {
       timestamp: false,
     }
   },
   about: {
+    title: "💁‍♂️ About",
     theme: {
       timestamp: false,
     }
